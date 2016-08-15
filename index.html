@@ -2,9 +2,9 @@
 var faces = ["😀"];
 faces.forEach(function(entry) {
     console.log(entry + " was added to the list.");
-    var div = document.getElementsByClassName('emoji-content');
+    var div = document.getElementById('emojicontent');
     div.innerHTML += entry;
 });
 </script>
 
-<div class="emoji-content">test</div>
+<div id="emojicontent">test</div>
