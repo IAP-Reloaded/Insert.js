@@ -1,12 +1,12 @@
 <div id="emojicontent"></div>
-
+https://jsfiddle.net/z70rhwvx/
 <script>
 "use strict";
 
 var faces = ["😀"];
 faces.forEach(function(entry) {
     var div = document.getElementById('emojicontent');
-    div.innerHTML += "<p>" + entry + "</p>";
+    div.innerHTML += "<p onclick=\"addText(\" + entry + \">" + entry + "</p>";
     console.log(entry + " was added to the list.");
 });
 </script>
